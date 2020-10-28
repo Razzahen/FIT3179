@@ -37,7 +37,8 @@
         "country_highlight": {
           "type": "multi",
           "fields": ["Country or region"],
-          "bind": "legend"
+          "bind": "legend",
+          "legend":null
         }
       },
       "mark": "circle",
