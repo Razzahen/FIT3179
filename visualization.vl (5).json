@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": "container",
-  "title": "GDP vs Trust and Impact On Happiness Score",
+  "height": 600
+  "title": "GDP Per Capita vs Trust and its Impact On Happiness Score",
   "data": {
     "url": "https://raw.githubusercontent.com/Razzahen/FIT3179/main/2019.csv"
   },
@@ -30,7 +31,6 @@
       "type": "quantitative",
       "title": "Trust in Government"
     }
-    
   },
   "layer": [
     {
@@ -51,9 +51,9 @@
             "domain": [3, 4, 5, 6, 7, 8],
             "range": [5, 40, 100, 200, 350, 500]
           },
-          "legend": null
+          "legend": {"format": ".1s"}
         },
-        "color": {"field": "Country or region", "type": "nominal", "legend":null},
+        "color": {"field": "Country or region", "type": "nominal"},
         "opacity": {
           "condition": {"selection": "country_highlight", "value": 0.6},
           "value": 0.2
@@ -102,7 +102,6 @@
             "field": "Cases per 10,000 Population",
             "type": "quantitative",
             "format": ".2f"
-            
           }
         ]
       }
