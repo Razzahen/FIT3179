@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": "container",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Razzahen/FIT3179/main/2019.csv"
+  },
+  "title": {"text": "GDP and its Impact on Score", "fontSize": 15},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "GDP per capita",
+      "type": "quantitative",
+      "title": "GDP per capita"
+    },
+    "y": {"field": "Score", "type": "quantitative"}
+  },
+  "config": {}
+}
