@@ -39,7 +39,7 @@
       "selection": {
         "country_highlight": {
           "type": "multi",
-          "fields": ["Country or region"],
+          "fields": ["Country"],
           "bind": "legend"
         }
       },
@@ -55,7 +55,7 @@
           },
           "legend": null
         },
-        "color": {"field": "Country or region", "type": "nominal", "legend":null},
+        "color": {"field": "Country", "type": "nominal", "legend":null},
         "opacity": {
           "condition": {"selection": "country_highlight", "value": 0.6},
           "value": 0.2
@@ -82,11 +82,11 @@
         "fontStyle": "italic"
       },
       "encoding": {
-        "text": {"field": "Country or region", "type": "nominal"},
+        "text": {"field": "Country", "type": "nominal"},
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country or region'] == 'China' || datum['Country or region'] =='Qatar' || datum['Country or region'] =='Singapore' || datum['Country or region'] == 'Australia' || datum['Country or region'] == 'New Zealand' || datum['Country or region'] == 'Italy' || datum['Country or region'] == 'Yemen' ||datum['Country or region'] == 'United States'",
+            "test": "datum['Country'] == 'China' || datum['Country'] =='Qatar' || datum['Country'] =='Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||datum['Country'] == 'United States'",
             "value": 1
           },
           "value": 0
