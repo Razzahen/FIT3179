@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": "container",
-  "title": "GDP vs Trust and Impact On Happiness Score",
+  "height": 300,
+  "title": {"text":"GDP vs Trust and Impact On Happiness Score", "fontSize": 20},
   "data": {
     "url": "https://raw.githubusercontent.com/Razzahen/FIT3179/main/2019.csv"
   },
@@ -33,6 +34,7 @@
     
   },
   "layer": [
+    
     {
       "selection": {
         "country_highlight": {
@@ -84,7 +86,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country or region'] == 'China' || datum['Country or region'] =='Singapore' || datum['Country or region'] == 'Australia' || datum['Country or region'] == 'New Zealand' || datum['Country or region'] == 'Italy' || datum['Country or region'] == 'Yemen' ||datum['Country or region'] == 'United States'",
+            "test": "datum['Country or region'] == 'China' || datum['Country or region'] =='Qatar' || datum['Country or region'] =='Singapore' || datum['Country or region'] == 'Australia' || datum['Country or region'] == 'New Zealand' || datum['Country or region'] == 'Italy' || datum['Country or region'] == 'Yemen' ||datum['Country or region'] == 'United States'",
             "value": 1
           },
           "value": 0
