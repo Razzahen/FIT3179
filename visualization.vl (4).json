@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Happiness Score for Each Country",
+  "title": {"text":"Happiness Score for Each Country", "fontSize": 13},
   "width": "container",
   "height": 350,
   "data": {
