@@ -14,7 +14,7 @@
         "data": {
           "url": "https://raw.githubusercontent.com/Razzahen/FIT3179/main/2019.csv"
         },
-        "key": "Country or region",
+        "key": "Country",
         "fields": ["Score"]
       }
     }
