@@ -4,6 +4,20 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Razzahen/FIT3179/main/2019.csv"
   },
+  "params": [
+    {
+      "name": "Score_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 10,
+        "step": 0.5,
+        "name": "Minimum Score: "
+      }
+    }
+  ],
+  "transform": [{"filter": "datum.Score > Score_Above"}],
   "title": {"text": "GDP and its Impact on Score", "fontSize": 15},
   "mark": "bar",
   "encoding": {
