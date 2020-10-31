@@ -1,8 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": "container",
-  "height": 300,
-  "title": {"text":"GDP vs Trust and Impact On Happiness Score", "fontSize": 14},
+  "title": "GDP vs Trust and Impact On Happiness Score",
   "data": {
     "url": "https://raw.githubusercontent.com/Razzahen/FIT3179/main/2019.csv"
   },
@@ -24,7 +23,7 @@
     "x": {
       "field": "GDP per capita",
       "type": "quantitative",
-      "title": "GDP per capita"
+      "title": "GDP per capita (billions)"
     },
     "y": {
       "field": "Perceptions of corruption",
@@ -34,7 +33,6 @@
     
   },
   "layer": [
-    
     {
       "selection": {
         "country_highlight": {
@@ -50,18 +48,18 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [3, 4, 5, 6, 7, 8],
-            "range": [5, 40, 100, 200, 350, 500]
+            "domain": [4, 5, 7, 8],
+            "range": [30, 50, 150, 300]
           },
-          "legend": null
+            "legend": null
         },
-        "color": {"field": "Country", "type": "nominal", "legend":null},
+        "color": {"field": "Score", "type": "quantitative"},
         "opacity": {
           "condition": {"selection": "country_highlight", "value": 0.6},
           "value": 0.2
         },
         "tooltip": [
-          {"field": "Country or region", "type": "nominal"},
+          {"field": "Country", "type": "nominal"},
           {"field": "GDP per capita", "type": "quantitative", "format": ","},
           {
             "field": "Perceptions of corruption",
@@ -86,26 +84,22 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] =='Qatar' || datum['Country'] =='Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||datum['Country'] == 'United States'",
+            "test": "datum['Country'] == 'China' || datum['Country'] =='Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country or region'] == 'Yemen' ||datum['Country or region'] == 'United States'",
             "value": 1
           },
           "value": 0
         },
         "tooltip": [
-          {"field": "Country or region", "type": "nominal"},
+          {"field": "Country", "type": "nominal"},
           {"field": "GDP per capita", "type": "quantitative", "format": ","},
           {
-            "field": "Perceptions of corruption",
+            "field": "Trust",
             "type": "quantitative",
             "format": ","
           },
-          {"field": "Score", "type": "quantitative", "format": ","},
-          {
-            "field": "Cases per 10,000 Population",
-            "type": "quantitative",
-            "format": ".2f"
-            
-          }
+          {"field": "Score", "type": "quantitative", "format": ","}
+          
+          
         ]
       }
     }
