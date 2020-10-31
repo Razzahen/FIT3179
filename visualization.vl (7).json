@@ -10,11 +10,11 @@
     "x": {
       "field": "GDP per capita",
       "type": "quantitative",
-      "title": "GDP per capita"
+      "title": "GDP per capita (billions)"
     },
     "y": {"field": "Score", "type": "quantitative"},
     "color": {
-      "field": "GDP per capita (billions)",
+      "field": "GDP per capita",
       "type": "quantitative",
       "legend": null
     },
