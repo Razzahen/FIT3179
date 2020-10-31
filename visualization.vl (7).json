@@ -14,7 +14,7 @@
     },
     "y": {"field": "Score", "type": "quantitative"},
     "color": {
-      "field": "GDP per capita",
+      "field": "GDP per capita (billions)",
       "type": "quantitative",
       "legend": null
     },
