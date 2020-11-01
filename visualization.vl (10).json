@@ -3,6 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Razzahen/FIT3179/main/2019.csv"
   },
+  "title": "GDP vs Trust and impact on Score",
   "width": "container",
   "mark": {"type": "line", "point": true},
   "encoding": {
