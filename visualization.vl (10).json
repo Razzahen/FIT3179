@@ -1,0 +1,12 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Razzahen/FIT3179/main/2019.csv"
+  },
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {"field": "GDP per capita", "type": "quantitative"},
+    "y": {"field": "Freedom to make life choices", "type": "quantitative"}
+  },
+  "config": {}
+}
